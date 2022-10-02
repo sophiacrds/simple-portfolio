@@ -4,6 +4,7 @@ import { Info } from "../../assets/projects-content";
 import ProjectCard from "../../components/ProjectCard";
 import Header from "../../components/Header";
 import BtnScroll from "../../components/BtnScroll";
+import Footer from "../../components/Footer";
 
 export default function Projects() {
 	return (
@@ -22,8 +23,9 @@ export default function Projects() {
 						/>
 					))}
 				</S.Container>
-				<BtnScroll />
 			</S.Main>
+			<Footer />
+			<BtnScroll />
 		</>
 	);
 }

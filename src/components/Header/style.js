@@ -42,11 +42,6 @@ export const List = styled.ul`
 	gap: 3rem;
 
 	color: var(--beige100);
-
-	a {
-		color: unset;
-		text-decoration: none;
-	}
 `;
 
 export const LinkStyle = styled(NavLink)`
@@ -65,16 +60,16 @@ export const HashLinkStyle = styled(NavHashLink)`
 	text-transform: uppercase;
 
 	&:hover {
-		text-decoration: underline !important;
+		text-decoration: underline;
 	}
 `;
 
 export const Onu = styled.span`
 	font-size: 1.4rem;
 	text-transform: uppercase;
+	color: #dac877;
 
 	&:hover {
-		text-decoration: underline double var(--green500) !important;
-		color: white;
+		text-decoration: underline double;
 	}
 `;

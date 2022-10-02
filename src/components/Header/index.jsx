@@ -17,7 +17,7 @@ export default function Header(p) {
 					<S.HashLinkStyle smooth to={"/projects#top"}>
 						projects
 					</S.HashLinkStyle>
-					<S.HashLinkStyle smooth to={"/#contact"}>
+					<S.HashLinkStyle smooth to={"#contact"}>
 						contact
 					</S.HashLinkStyle>
 					<a href="https://onu-sdg.netlify.app">

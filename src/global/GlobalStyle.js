@@ -10,12 +10,11 @@ export const GlobalStyle = createGlobalStyle`
 
 
   :root{
+    --green950: #273131;
     --green900: #36453b;
     --green850: #505C52;
     --green800: #5a7262;
-    --green500: #819c8b;
-    --green300: #cdcdb6;
-    --green150: #A8B3A9;
+    --green150: #929d93;
 
     --beige100: #e7e5d4;
     --gray150: #C2C3C1;
@@ -28,4 +27,9 @@ export const GlobalStyle = createGlobalStyle`
          --pad: 2rem calc((100vw - var(--max-width-sec)) / 2);
       }
   }
+
+  a {
+		color: unset;
+		text-decoration: none;
+	}
 `;
