@@ -16,11 +16,15 @@ export const Main = styled.main`
 export const Container = styled.div`
 	/* width: 100%;
 	height: 100%; */
-	padding: 2rem;
+	padding: 2rem 1rem;
 	margin-top: 4rem;
 
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
+
+	@media (min-width: 700px) {
+		padding: 2rem;
+	}
 `;

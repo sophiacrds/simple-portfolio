@@ -11,6 +11,7 @@ import todohooks from "../assets/images/todo-hooks.png";
 import animals from "../assets/images/animals.png";
 import ricknmorty from "../assets/images/ricknmorty.png";
 import recipes from "../assets/images/recipes.png";
+import onu from "../assets/images/onu.png";
 
 export const Info = [
 	{
@@ -147,5 +148,13 @@ export const Info = [
 		img: recipes,
 		techstack: ["REACT", "Styled-components", "Responsive Design", "#PairProgramming"],
 		reverse: false,
+	},
+	{
+		title: "Objetivos de Desenvolvimento Sustentável (ODS-ONU)",
+		code: "ODS-onu",
+		demo: "https://onu-sdg.netlify.app/",
+		img: onu,
+		techstack: ["REACT", "useState", "Modal", "Styled-components", "Responsive Design"],
+		reverse: true,
 	},
 ];

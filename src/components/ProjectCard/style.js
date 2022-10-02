@@ -16,12 +16,12 @@ export const Card = styled.section`
 `;
 
 export const Img = styled.img`
-	width: 70vmin;
+	width: 80vmin;
 
 	border: 5px solid black;
 
 	@media (min-width: 1050px) {
-		width: 45vmax;
+		width: 50vmax;
 		max-width: 600px;
 	}
 `;
@@ -43,7 +43,7 @@ export const TextContent = styled.div`
 `;
 
 export const Title = styled.h2`
-	font-size: 2rem;
+	font-size: 1.5rem;
 
 	@media (min-width: 1050px) {
 		font-size: 2.5rem;
