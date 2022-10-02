@@ -3,12 +3,13 @@ import * as S from "./style";
 import { Info } from "../../../assets/projects-content";
 import ProjectCard from "../../ProjectCard";
 import Header from "../../Header";
+import BtnScroll from "../../BtnScroll";
 
 export default function Projects() {
 	return (
 		<>
 			<S.Main>
-				<Header />
+				<Header color={"var(--green150)"} />
 				<S.Container>
 					{Info.map((i, index) => (
 						<ProjectCard
@@ -21,7 +22,7 @@ export default function Projects() {
 						/>
 					))}
 				</S.Container>
-				{/* <S.Arrow icon={faArrowUp} /> */}
+				<BtnScroll />
 			</S.Main>
 		</>
 	);

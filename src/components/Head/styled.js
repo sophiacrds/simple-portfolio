@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HomeSec = styled.section`
 	width: 100%;
 	height: 100vh;
+	padding-top: 6rem;
 
 	background: var(--green900);
 `;
@@ -16,7 +17,7 @@ export const HomeContent = styled.div`
 	align-items: center;
 
 	h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 		color: var(--beige100);
 	}
 `;

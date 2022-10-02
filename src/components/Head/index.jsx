@@ -1,10 +1,9 @@
-import { faStarOfLife } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import Header from "../Header";
 
 import * as S from "./styled";
 
-export default function Home() {
+export default function Head() {
 	return (
 		<>
 			<S.HomeSec>

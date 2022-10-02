@@ -4,7 +4,7 @@ import img from "../../assets/images/sophia.jpg";
 
 export default function About() {
 	return (
-		<S.AboutSec>
+		<S.AboutSec id="about">
 			<S.CardProfile>
 				<S.Img src={img} alt="" />
 				<S.Text>

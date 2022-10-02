@@ -13,8 +13,8 @@ export const AboutSec = styled.section`
 `;
 
 export const CardProfile = styled.div`
-	width: 60%;
-	height: 40%;
+	width: 70%;
+	height: 50%;
 
 	display: flex;
 	justify-content: center;
@@ -31,6 +31,7 @@ export const Img = styled.img`
 `;
 
 export const Text = styled.p`
-	padding: 1rem;
+	font-size: 1.2rem;
+	padding: 2rem;
 	color: black;
 `;

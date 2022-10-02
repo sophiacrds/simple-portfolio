@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Main = styled.main`
 	width: 100%;
@@ -24,11 +23,4 @@ export const Container = styled.div`
 	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
-`;
-
-export const Arrow = styled(FontAwesomeIcon)`
-	height: 4rem;
-	position: fixed;
-	right: 5rem;
-	bottom: 5rem;
 `;

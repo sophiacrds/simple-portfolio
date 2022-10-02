@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 export const HeaderStyle = styled.header`
 	width: 100%;
@@ -10,7 +12,10 @@ export const HeaderStyle = styled.header`
 	justify-content: space-between;
 	align-items: center;
 
-	background: transparent;
+	position: fixed;
+	top: 0;
+
+	background: ${(p) => (p.color ? p.color : "transparent")};
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
@@ -41,15 +46,35 @@ export const List = styled.ul`
 	a {
 		color: unset;
 		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline !important;
-		}
 	}
+`;
 
-	li {
-		list-style: none;
-		font-size: 1.4rem;
-		text-transform: uppercase;
+export const LinkStyle = styled(NavLink)`
+	list-style: none;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline !important;
+	}
+`;
+
+export const HashLinkStyle = styled(NavHashLink)`
+	list-style: none;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline !important;
+	}
+`;
+
+export const Onu = styled.span`
+	font-size: 1.4rem;
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline double var(--green500) !important;
+		color: white;
 	}
 `;
