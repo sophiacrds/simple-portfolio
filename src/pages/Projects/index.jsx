@@ -1,9 +1,9 @@
 import React from "react";
 import * as S from "./style";
-import { Info } from "../../../assets/projects-content";
-import ProjectCard from "../../ProjectCard";
-import Header from "../../Header";
-import BtnScroll from "../../BtnScroll";
+import { Info } from "../../assets/projects-content";
+import ProjectCard from "../../components/ProjectCard";
+import Header from "../../components/Header";
+import BtnScroll from "../../components/BtnScroll";
 
 export default function Projects() {
 	return (

@@ -9,9 +9,10 @@ const Arrow = styled(FontAwesomeIcon)`
 	right: 5rem;
 	bottom: 5rem;
 	cursor: pointer;
+	color: ${(p) => (p.color ? p.color : "black")};
 `;
 
-export default function BtnScroll() {
+export default function BtnScroll(p) {
 	const [status, setStatus] = useState(false);
 
 	useEffect(() => {
@@ -35,6 +36,7 @@ export default function BtnScroll() {
 		<>
 			{status && (
 				<Arrow
+					color={p.color}
 					icon={faArrowUp}
 					onClick={() => {
 						goTop();
