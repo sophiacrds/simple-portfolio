@@ -4,12 +4,11 @@ import * as S from "./style";
 export default function ProjectCard(p) {
 	return (
 		<>
-			<S.Card>
+			<S.Card reverse={p.reverse}>
 				<S.Img src={p.img} alt={`${p.title} Website`} title={`${p.title} Website`} />
-
-				<S.TextContent>
+				<S.TextContent reverse={p.reverse}>
 					<S.Title>{p.title}</S.Title>
-					<S.Tags>
+					<S.Tags reverse={p.reverse}>
 						{p.tech.map((i, index) => (
 							<S.Tag key={index}>{i}</S.Tag>
 						))}

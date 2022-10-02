@@ -1,29 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./style";
-import { faStarOfLife } from "@fortawesome/free-solid-svg-icons";
+import { faStarOfLife, faBars } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
+import NavMobile from "../NavMobile";
+import NavList from "../NavList";
 
 export default function Header(p) {
+	const [status, setStatus] = useState(false);
+
 	return (
 		<S.HeaderStyle color={p.color}>
 			<HashLink smooth to={"/#top"}>
 				<S.Icon icon={faStarOfLife} title="home" />
 			</HashLink>
 			<S.Nav>
-				<S.List>
-					<S.HashLinkStyle smooth to={"/#about"}>
-						about
-					</S.HashLinkStyle>
-					<S.HashLinkStyle smooth to={"/projects#top"}>
-						projects
-					</S.HashLinkStyle>
-					<S.HashLinkStyle smooth to={"#contact"}>
-						contact
-					</S.HashLinkStyle>
-					<a href="https://onu-sdg.netlify.app">
-						<S.Onu>ONU - SDG</S.Onu>
-					</a>
-				</S.List>
+				<S.Icon
+					icon={faBars}
+					id="menuMobile"
+					onClick={() => {
+						setStatus((p) => !p);
+					}}
+				/>
+				{status && <NavMobile />}
+				<NavList />
 			</S.Nav>
 		</S.HeaderStyle>
 	);

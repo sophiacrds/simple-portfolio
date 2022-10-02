@@ -19,6 +19,7 @@ export default function Projects() {
 							img={i.img}
 							code={i.code}
 							demo={i.demo}
+							reverse={i.reverse}
 							key={index}
 						/>
 					))}

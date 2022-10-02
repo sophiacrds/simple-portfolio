@@ -6,6 +6,10 @@ export const HomeSec = styled.section`
 	padding-top: 6rem;
 
 	background: var(--green900);
+
+	@media (min-width: 1800px) {
+		height: 60rem;
+	}
 `;
 
 export const HomeContent = styled.div`
@@ -19,5 +23,9 @@ export const HomeContent = styled.div`
 	h1 {
 		font-size: 4rem;
 		color: var(--beige100);
+	}
+
+	@media (min-width: 1800px) {
+		height: 60rem;
 	}
 `;

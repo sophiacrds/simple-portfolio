@@ -10,6 +10,11 @@ const Arrow = styled(FontAwesomeIcon)`
 	bottom: 5rem;
 	cursor: pointer;
 	color: ${(p) => (p.color ? p.color : "black")};
+
+	@media (max-width: 630px) {
+		bottom: 16rem;
+		right: 8px;
+	}
 `;
 
 export default function BtnScroll(p) {

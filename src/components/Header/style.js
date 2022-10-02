@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
 export const HeaderStyle = styled.header`
@@ -16,6 +15,12 @@ export const HeaderStyle = styled.header`
 	top: 0;
 
 	background: ${(p) => (p.color ? p.color : "transparent")};
+
+	#menuMobile {
+		@media (min-width: 750px) {
+			display: none;
+		}
+	}
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
@@ -27,49 +32,13 @@ export const Icon = styled(FontAwesomeIcon)`
 		transition: 1s all;
 		transform: rotate(360deg);
 	}
+
+	@media (max-width: 500px) {
+		height: 2.4rem;
+	}
 `;
 
 export const Nav = styled.nav`
 	width: fit-content;
-`;
-
-export const List = styled.ul`
-	width: 100%;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 3rem;
-
-	color: var(--beige100);
-`;
-
-export const LinkStyle = styled(NavLink)`
-	list-style: none;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-
-	&:hover {
-		text-decoration: underline !important;
-	}
-`;
-
-export const HashLinkStyle = styled(NavHashLink)`
-	list-style: none;
-	font-size: 1.4rem;
-	text-transform: uppercase;
-
-	&:hover {
-		text-decoration: underline;
-	}
-`;
-
-export const Onu = styled.span`
-	font-size: 1.4rem;
-	text-transform: uppercase;
-	color: #dac877;
-
-	&:hover {
-		text-decoration: underline double;
-	}
+	position: relative;
 `;

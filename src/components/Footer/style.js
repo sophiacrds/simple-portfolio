@@ -11,6 +11,7 @@ export const Footer = styled.footer`
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	text-align: center;
 
 	background: var(--green950);
 `;

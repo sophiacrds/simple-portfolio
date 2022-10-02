@@ -6,7 +6,9 @@ export default function About() {
 	return (
 		<S.AboutSec id="about">
 			<S.CardProfile>
-				<S.Img src={img} alt="" />
+				{/* <S.Img src={img} alt="" /> */}
+				<S.Box></S.Box>
+
 				<S.Text>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam sed magni excepturi
 					exercitationem recusandae nisi eum asperiores aperiam impedit! Lorem, ipsum dolor sit amet
