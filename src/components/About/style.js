@@ -15,8 +15,8 @@ export const AboutSec = styled.section`
 	@media (min-width: 500px) {
 		height: 100vh;
 	}
-	@media (min-width: 1800px) {
-		height: 60rem;
+	@media (min-width: 1900px) {
+		height: 50rem;
 	}
 `;
 
