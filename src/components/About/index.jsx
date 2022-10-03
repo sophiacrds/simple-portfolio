@@ -1,12 +1,10 @@
 import React from "react";
 import * as S from "./style";
-import img from "../../assets/images/sophia.jpg";
 
 export default function About() {
 	return (
 		<S.AboutSec id="about">
 			<S.CardProfile>
-				{/* <S.Img src={img} alt="" /> */}
 				<S.Box></S.Box>
 
 				<S.Text>

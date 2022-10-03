@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as S from "./style";
 import { faStarOfLife, faBars } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";

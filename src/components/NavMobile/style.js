@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import * as Original from "../NavList/style";
-import { NavHashLink } from "react-router-hash-link";
 
 export const List = styled(Original.List)`
 	@media (max-width: 750px) {

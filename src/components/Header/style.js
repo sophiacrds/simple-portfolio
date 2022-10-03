@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavHashLink } from "react-router-hash-link";
 
 export const HeaderStyle = styled.header`
 	width: 100%;
