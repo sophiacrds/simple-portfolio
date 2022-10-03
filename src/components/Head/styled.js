@@ -7,7 +7,7 @@ export const HomeSec = styled.section`
 
 	background: var(--green900);
 
-	@media (min-width: 1800px) {
+	@media (min-width: 1900px) {
 		height: 60rem;
 	}
 `;
@@ -25,7 +25,7 @@ export const HomeContent = styled.div`
 		color: var(--beige100);
 	}
 
-	@media (min-width: 1800px) {
+	@media (min-width: 1900px) {
 		height: 60rem;
 	}
 `;
