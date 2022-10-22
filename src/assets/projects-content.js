@@ -154,7 +154,14 @@ export const Info = [
 		code: "ODS-onu",
 		demo: "https://onu-sdg.netlify.app/",
 		img: onu,
-		techstack: ["REACT", "useState", "Modal", "Styled-components", "Responsive Design"],
+		techstack: [
+			"REACT",
+			"useState",
+			"Modal",
+			"Styled-components",
+			"FontAwesome",
+			"Responsive Design",
+		],
 		reverse: true,
 	},
 ];
